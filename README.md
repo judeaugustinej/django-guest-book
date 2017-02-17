@@ -1,5 +1,23 @@
-# PyTexas 2015 Demo Application
+# README #
 
-This is a demonstration application from my talk at PyTexas 2015: [Building Python Apps w/ Docker](https://bitbucket.org/markadams/pytexas-2015)
+### Django Guest Book App ###
 
-The app in this repo is dockerized. To see it pre-docker, look at the [pre-docker](https://bitbucket.org/markadams/pytexas-2015-demo/branch/pre-docker)
+* Register unique users.
+
+### Setup the suf application for development / testing ###
+
+* Clone the repository: $ git clone https://github.com/judeaugustinej
+
+* Navigate to required file director : $ cd 
+
+* Install required libraries: $ pip install -r requirements.txt 
+
+* Create or update database, tables and super user: $ python manage.py migrate
+
+* Run the development server: $ python manage.py runsever
+
+* Login to the application through browser: http://127.0.0.1:8000
+
+### Contact ###
+
+* judeaugustinej@gmail.com
