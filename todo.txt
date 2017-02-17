@@ -1,0 +1,2 @@
+1. Docker, Docker-compose and postgres
+2. Make the web-page better using bootstrap/css/js
