@@ -1,0 +1,26 @@
+{% extends 'guestbook/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container">
+    <div class="jumbotron">
+    <h1>Welcome to our Guestbook!</h1>
+    </div>
+
+            <h2>Guests</h2>
+            <p>These are the guests who have signed our guestbook:</p>
+             <ul>
+               {% for guest in guests %}
+                   <li>{{ guest.name }}</li>
+               {% endfor %}
+
+            </ul> 
+            <h3>Sign our Guestbook</h3>
+            <form method="POST">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+            </form>
+            <p>{{ hits }} people have visited this website since January 15th, 1998</p>
+            <p>This website works best with</p>
+            <img src="{% static 'guestbook/images/msie_animated.gif' %}" alt="Mountain View"/>
+        </div>
+{% endblock %}
