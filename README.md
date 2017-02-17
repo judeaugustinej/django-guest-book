@@ -10,7 +10,7 @@
 
 * Install required libraries: $ pip install -r requirements.txt 
 
-* Navigate to required file director : $ cd django-guest-book/myguest_book_project
+* Navigate to required file location : $ cd django-guest-book/myguest_book_project
 
 * Create or update database, tables and super user: $ python manage.py migrate
 
